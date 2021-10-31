@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProjetoTesteAspNet.Models;
 using System.Diagnostics;
+using ProjetoTesteAspNet.Models.ViewModels;
 
 namespace ProjetoTesteAspNet.Controllers
 {

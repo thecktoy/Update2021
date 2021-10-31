@@ -1,4 +1,4 @@
-namespace ProjetoTesteAspNet.Models
+namespace ProjetoTesteAspNet.Models.ViewModels
 {
     public class ErrorViewModel
     {
