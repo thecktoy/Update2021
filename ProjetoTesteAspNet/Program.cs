@@ -1,4 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using ProjetoTesteAspNet.Data;
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ProjetoTesteAspNetContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProjetoTesteAspNetContext")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
